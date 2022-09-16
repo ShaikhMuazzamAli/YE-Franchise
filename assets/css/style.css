@@ -261,9 +261,12 @@ p {
 }
 
 .animage {
-  z-index: 1;
+  z-index: -1;
   position: relative;
-  animation: mymove 5s infinite;
+  animation: mymove 5s;
+  /* width: 200px;
+  height: 150px;
+  margin-top: 33px; */
 }
 
 /* @keyframes mymove {
@@ -272,7 +275,7 @@ p {
 } */
 
 @keyframes mymove {
-  from {left: 15px;}
+  from {left: 5px;}
   to {left: 480px;}
 }
 
@@ -308,15 +311,15 @@ p {
 .box1 {
   width: 50%;
   margin-top: 30px;
-  margin-left: 50%;
-  text-align: justify;
+  /* margin-left: 50%;
+  text-align: justify; */
 }
 
 .box2 {
   width: 50%;
   margin-top: 30px;
-  margin-left: 30%;
-  text-align: justify;
+  /* margin-left: 30%;
+  text-align: justify; */
 }
 
 /*--------------------------------------------------------------
@@ -368,13 +371,15 @@ p {
 
 .box5 {
   /* text-align: right; */
-  margin-left: 10%;
-  margin-right: 30%;
+  margin-left: 17%;
+  /* margin-right: 30%; */
   margin-top: 50px;
 }
 
 .box6 {
   margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*--------------------------------------------------------------
@@ -409,13 +414,16 @@ p {
 
 .box8 {
   margin-top: 50px;
-  text-align: justify;
+  /* text-align: justify; */
   margin-left: 40%;
 }
 
 .box9 {
   margin-top: 50px;
-  margin-left: 10%;
+  /* margin-left: 10%; */
+  margin-right: 16%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*--------------------------------------------------------------
@@ -433,6 +441,7 @@ p {
 .box10 {
   margin: auto;
   width: 70%;
+  margin-right: 50%;
   margin-top: 50px;
 }
 
@@ -445,7 +454,8 @@ p {
 .box11 {
   margin: auto;
   width: 70%;
-  margin-right: 25%;
+  /* margin-right: 25%; */
+  margin-left: 30%;
   margin-top: 50px;
 }
 
@@ -467,12 +477,14 @@ p {
   margin: auto;
   width: 70%;
   margin-top: 50px;
+  margin-left: 30%;
 }
 
 .box13 {
   margin: auto;
-  width: 90%;
+  width: 70%;
   margin-top: 50px;
+  margin-left: 30%;
 }
 
 .title8 {
@@ -483,6 +495,7 @@ p {
   margin: auto;
   width: 60%;
   margin-top: 50px;
+  margin-right: 50%;
 }
 
 .text-1, .text-2, .para-1 {
@@ -550,6 +563,14 @@ p {
     margin-left: 0px;
     margin-right: 0px;
   }
+
+  /* .animage {
+    margin-top: 200px !important;
+    z-index: unset;
+    position: unset;
+    animation: none !important;
+  } */
+
 }
 
 /*--------------------------------------------------------------
